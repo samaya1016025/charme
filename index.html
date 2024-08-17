@@ -3,37 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Web</title>
+    <title>Productos de Maquillaje</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Bienvenido a Mi Página Web</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Inicio</a></li>
-                <li><a href="#about">Acerca de</a></li>
-                <li><a href="#contact">Contacto</a></li>
-            </ul>
-        </nav>
+        <h1>Productos de Maquillaje</h1>
     </header>
+    
     <main>
-        <section id="home">
-            <h2>Inicio</h2>
-            <p>Contenido de la sección de inicio.</p>
-        </section>
-        <section id="about">
-            <h2>Acerca de</h2>
-            <p>Contenido de la sección acerca de.</p>
-        </section>
-        <section id="contact">
-            <h2>Contacto</h2>
-            <p>Contenido de la sección de contacto.</p>
+        <section id="products">
+            <!-- Lista de productos -->
+            <div class="product" data-name="Base Líquida" data-price="25">
+                <img src="base-liquida.jpg" alt="Base Líquida">
+                <h2>Base Líquida</h2>
+                <p>Precio: $25</p>
+                <button class="buy-button">Comprar</button>
+            </div>
+            <div class="product" data-name="Máscara de Pestañas" data-price="15">
+                <img src="mascara-pestanas.jpg" alt="Máscara de Pestañas">
+                <h2>Máscara de Pestañas</h2>
+                <p>Precio: $15</p>
+                <button class="buy-button">Comprar</button>
+            </div>
+            <!-- Puedes agregar más productos aquí -->
         </section>
     </main>
+    
     <footer>
-        <p>© 2024 Mi Página Web. Todos los derechos reservados.</p>
+        <p>&copy; 2024 Tu Tienda de Maquillaje</p>
     </footer>
-    <script src="scripts.js"></script>
+
+    <script src="script.js"></script>
 </body>
 </html>
