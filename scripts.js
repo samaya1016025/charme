@@ -1,14 +1,12 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const navLinks = document.querySelectorAll('nav ul li a');
-    navLinks.forEach(link => {
-        link.addEventListener('click', function(event) {
-            event.preventDefault();
-            const targetId = this.getAttribute('href').substring(1);
-            const targetSection = document.getElementById(targetId);
-            window.scrollTo({
-                top: targetSection.offsetTop,
-                behavior: 'smooth'
-            });
+document.addEventListener('DOMContentLoaded', () => {
+    const buyButtons = document.querySelectorAll('.buy-button');
+
+    buyButtons.forEach(button => {
+        button.addEventListener('click', (e) => {
+            const product = e.target.closest('.product');
+            const productName = product.dataset.name;
+            const productPrice = product.dataset.price;
+            alert(`¡Has comprado ${productName} por $${productPrice}!`);
         });
     });
 });
